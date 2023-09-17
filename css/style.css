@@ -36,12 +36,15 @@ header {
 }
 .projects a {
     color: #A53F2B;
+}
+.projects .btn {
+    color: #A53F2B;
     background: #D1CFE2;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
 }
-.projects a:hover {
+.projects a.btn:hover {
     background: rgba(209, 207, 226, 80%);
 }
 
