@@ -10,13 +10,18 @@ COLOR PALETTE
 
 /*Global Styles
 ------------------------*/
+body {
+    color: #023436;
+}
 img {
     width: 300px;
 }
 
 /*Profile
 ------------------------*/
-
+header {
+    background-color: #A53F2B;
+}
 /*Projects
 ------------------------*/
 
