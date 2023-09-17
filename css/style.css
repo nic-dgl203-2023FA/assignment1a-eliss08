@@ -21,15 +21,26 @@ img {
 ------------------------*/
 header {
     background-color: #A53F2B;
+    color: whitesmoke;
 }
 /*Projects
 ------------------------*/
+.projects {
+    background-color: #D4AFB9;
+}
 
 /*Work Experience
 ------------------------*/
+.work-exp {
+    background-color: #00BFB3;
+}
 
 /*Education
 ------------------------*/
 
 /*Contact Info
 ------------------------*/
+footer {
+    background-color: #A53F2B;
+    color: whitesmoke;
+}
