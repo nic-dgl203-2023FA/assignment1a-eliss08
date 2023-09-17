@@ -12,6 +12,8 @@ COLOR PALETTE
 ------------------------*/
 body {
     color: #023436;
+    margin: 0;
+    padding: 0;
 }
 img {
     width: 300px;
@@ -22,9 +24,13 @@ a {
 a:hover {
     text-decoration: none;
 }
+h2 {
+    margin: 0;
+}
 .content-wrap {
     width: 800px;
     margin: 0 auto;
+    padding: 60px 0;
 }
 /*Profile
 ------------------------*/
