@@ -76,7 +76,15 @@ header {
 .projects a.btn:hover {
     background: rgba(209, 207, 226, 80%);
 }
-
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #023436;
+    padding: 25px 0;
+}
+.project-item img {
+    float:left;
+    margin-right: 20px;
+}
 /*Work Experience
 ------------------------*/
 .work-exp {
