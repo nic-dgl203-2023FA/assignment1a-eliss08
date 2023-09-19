@@ -10,6 +10,13 @@ COLOR PALETTE
 
 /*Global Styles
 ------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color: #023436;
     margin: 0;
