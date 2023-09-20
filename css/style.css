@@ -98,10 +98,7 @@ header {
 .project-item {
     overflow: hidden;
 }
-.project-item img {
-    float:left;
-    margin-right: 20px;
-}
+
 .project-item h3 {
     margin-top: 0;
 }
@@ -110,11 +107,7 @@ header {
 .work-exp {
     background-color: #00BFB3;
 }
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-}
+
 /*Education
 ------------------------*/
 .education {
@@ -143,4 +136,19 @@ footer {
 .contact-list a {
     padding: 15px;
     display: inline-block;
+}
+
+/*Responsive
+------------------------*/
+@media screen and (min-width: 750px) {
+    .project-item img {
+        float:left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
 }
