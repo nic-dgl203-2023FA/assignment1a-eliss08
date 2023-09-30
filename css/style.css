@@ -69,6 +69,26 @@ h3 {
     border-bottom: none;
 }
 
+/*Nav Bar adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f
+------------------------*/
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    background: #02020B; 
+}
+  
+nav ul {
+    display: flex; 
+    list-style: none; 
+}
+  
+nav li {
+    padding-left: 1rem; 
+}
+nav a {
+    text-decoration: none;
+}
 /*Profile
 ------------------------*/
 header {
@@ -171,5 +191,16 @@ footer {
     }
     .contact-list a {
         padding: 5px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+    nav li {
+        padding: 0.5rem 0;
+    }
     }
 }
