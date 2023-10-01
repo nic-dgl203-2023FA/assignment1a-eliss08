@@ -74,7 +74,7 @@ h3 {
 nav {
     display: flex; 
     justify-content: space-between; 
-    padding: 1rem 2rem; 
+    padding: 1rem 4rem; 
     background: #02020B; 
     position: sticky;
     top: 0;
@@ -105,9 +105,8 @@ header {
 /*Projects
 ------------------------*/
 .projects {
-    background-image: url(../images/grey\ wall.png);
-    background-size: cover;
-    background-position: center;
+    background-color: #005E7C;
+    color: #FEFCFB;
 }
 .projects a {
     color: #A53F2B;
@@ -133,16 +132,18 @@ header {
 /*Work Experience
 ------------------------*/
 .work-exp {
-    background-color: #00BFB3;
+    background-image: url(../images/grey\ wall.png);
+    background-size: cover;
+    background-position: center;
+    color: #02020B;
 }
 
 /*Education
 ------------------------*/
 .education {
-    background-image: url(../images/grey_texture.jpg);
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 100px;
+    background-color: #996888;
+    color: #FEFCFB;
+    padding-bottom: 50px;
 }
 .education p {
     width: 60%;
@@ -151,7 +152,9 @@ header {
 /*Contact Info
 ------------------------*/
 footer {
-    background-color: #A53F2B;
+    background-image: url(../images/grey_texture.jpg);
+    background-size: cover;
+    background-position: center;
     color: whitesmoke;
 }
 .contact-list {
