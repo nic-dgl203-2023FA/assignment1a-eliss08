@@ -62,7 +62,7 @@ h3 {
     margin: 0;
 }
 .divider > section {
-    border-bottom: 1px dashed #8A4F7D;
+    border-bottom: 1px dashed #996888;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -108,19 +108,20 @@ header {
     background-color: #005E7C;
     color: #FEFCFB;
 }
+/* Not in use right now
 .projects a {
     color: #A53F2B;
-}
+}*/
 .projects .btn {
-    color: #A53F2B;
-    background: #D1CFE2;
+    color: #FEFCFB;
+    background: #8A4F7D;
     text-decoration: none;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 16px;
     display: inline-block;
 }
 .projects a.btn:hover {
-    background: rgba(209, 207, 226, 80%);
+    background: #996888;
 }
 .project-item {
     overflow: hidden;
@@ -159,11 +160,15 @@ footer {
 }
 .contact-list {
     list-style-type: none;
-    padding: 0;
+    background: #FEFCFB;
+    padding: 8px;
+    border-radius: 16px;
+    display: inline;
+    justify-content: space-between;
 }
 .contact-list a {
-    padding: 15px;
-    display: inline-block;
+    color: #005E7C;
+    text-decoration: none;
 }
 
 /*Responsive
