@@ -163,8 +163,8 @@ footer {
     background: #FEFCFB;
     padding: 8px;
     border-radius: 16px;
-    display: inline;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 .contact-list a {
     color: #005E7C;
