@@ -1,10 +1,10 @@
 /*
 COLOR PALETTE
-#F8C0C8 - Pink
-#F6F6F6 - Cream
+#996888 - Purple
+#FEFCFB - Cream
 #02020B - Black
-#75F4F4 - Blue
-#F6F930 - Yellow
+#005E7C - Blue
+#8A4F7D - Dark Purple
 */
 
 
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    color: #023436;
+    color: #005E7C;
     margin: 0;
     padding: 0;
     font-family: 'Sintony', sans-serif;
@@ -29,7 +29,7 @@ img {
     width: 300px;
 }
 a {
-    color: #D4AFB9;
+    color: #996888;
 }
 a:hover {
     text-decoration: none;
@@ -62,7 +62,7 @@ h3 {
     margin: 0;
 }
 .divider > section {
-    border-bottom: 1px dashed #023436;
+    border-bottom: 1px dashed #8A4F7D;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -94,18 +94,20 @@ nav a {
 /*Profile
 ------------------------*/
 header {
-    background-image: url(../images/pink_texture.jpg);
+    background-image: url(../images/Wall\ Texture.png);
     background-size: cover;
     background-position: center;
 }
-.bkg-color {
-    background-color: rgba(248, 192, 200, 0.8);
+/*.bkg-color {
+    background-color: rgba(2, 2, 11, 0.4);
     background-size: cover;
-}
+}*/
 /*Projects
 ------------------------*/
 .projects {
-    background-color: #D4AFB9;
+    background-image: url(../images/grey\ wall.png);
+    background-size: cover;
+    background-position: center;
 }
 .projects a {
     color: #A53F2B;
