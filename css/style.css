@@ -130,6 +130,7 @@ header {
 .project-item h3 {
     margin-top: 0;
 }
+
 /*Work Experience
 ------------------------*/
 .work-exp {
@@ -213,6 +214,5 @@ footer {
     }
     nav li {
         padding: 0.5rem 0;
-    }
     }
 }
