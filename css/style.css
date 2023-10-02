@@ -91,6 +91,11 @@ nav li {
 nav a {
     text-decoration: none;
 }
+nav ul li a:hover {
+    color: #FEFCFB;
+    transition: all 1s;
+}
+
 /*Profile
 ------------------------*/
 header {
@@ -122,6 +127,7 @@ header {
 }
 .projects a.btn:hover {
     background: #996888;
+    transition: all 1s;
 }
 .project-item {
     overflow: hidden;
