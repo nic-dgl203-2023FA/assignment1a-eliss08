@@ -182,7 +182,7 @@ footer {
 .motion {
     padding: 1rem;
     margin: auto;
-    max-width: 749px;
+    max-width: 849px;
   }
   /* NOT IN USE RIGHT NOW
   .motion article {
@@ -212,7 +212,7 @@ footer {
   .motionList li {
     background-color: #FEFCFB;
     border-radius: 6px;
-    border: solid 1px #dedede;
+    border: 1px dashed #996888;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1.8rem;
     display: grid;
