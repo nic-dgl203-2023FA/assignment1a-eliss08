@@ -235,7 +235,7 @@ footer {
     text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
     align-self: end;
   }
-  /* NOT IN USE RIGHT NOW
+ 
   .motion a {
     border-radius: 3px;
     background-color: #39bae6;
@@ -251,7 +251,20 @@ footer {
   .motion a:hover {
     background-color: #333;
   }
-*/
+
+.motion .btn {
+    color: #FEFCFB;
+    background: #996888;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 16px;
+}
+.motion a.btn:hover {
+    background: #FEFCFB;
+    transition: all 1s;
+    color: #8A4F7D;
+    border: 1px dashed #996888;
+}
 
 /*Responsive
 ------------------------*/
