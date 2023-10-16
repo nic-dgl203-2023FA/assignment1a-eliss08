@@ -258,10 +258,12 @@ footer {
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
+    transition: border .5s ease-out;
+    transition: background-color 1s ease;
+    transition: color 3s ease-in-out;
 }
 .motion a.btn:hover {
-    background: #FEFCFB;
-    transition: all 1s;
+    background-color: #FEFCFB;
     color: #8A4F7D;
     border: 1px dashed #996888;
 }
