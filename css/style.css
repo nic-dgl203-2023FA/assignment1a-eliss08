@@ -309,6 +309,33 @@ Adapted from https://blog.hubspot.com/website/typing-animation-css
     animation: type 1.5s steps(20, end) forwards, blinking 1s;
 }
 
+/* SVG
+------------------------*/
+@keyframes float {
+    0% {
+        transform: translateX(-80px)
+        rotate(0);
+    }
+    50% {
+        transform: translateX(80px)
+        rotate(40deg);
+    }
+    100% {
+        transform: translateX(-80px);
+        rotate: (0);
+    }
+}
+.fire {
+    background-image: url(../images/embers.jpg);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.toast {
+    max-width: 80px;
+    animation: float 6s ease infinite;
+    padding-top: 15px;
+}
 
 /* Flip
 ------------------------*/
