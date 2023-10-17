@@ -259,6 +259,8 @@ footer {
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
 } 
 
 /* Type
