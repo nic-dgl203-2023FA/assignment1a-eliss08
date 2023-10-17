@@ -75,9 +75,10 @@ nav {
     display: flex; 
     justify-content: space-between; 
     padding: 1rem 4rem; 
-    background: #02020B; 
+    background: #FEFCFB; 
     position: sticky;
     top: 0;
+    border-bottom: dashed #005E7C;
 }
   
 nav ul {
@@ -92,8 +93,10 @@ nav a {
     text-decoration: none;
 }
 nav ul li a:hover {
+    background-color: #005E7C;
     color: #FEFCFB;
     transition: all 1s;
+    padding: 15px;
 }
 
 /*Profile
@@ -103,20 +106,14 @@ header {
     background-size: cover;
     background-position: center;
 }
-/*.bkg-color {
-    background-color: rgba(2, 2, 11, 0.4);
-    background-size: cover;
-}*/
+
 /*Projects
 ------------------------*/
 .projects {
     background-color: #005E7C;
     color: #FEFCFB;
 }
-/* Not in use right now
-.projects a {
-    color: #A53F2B;
-}*/
+
 .projects .btn {
     color: #FEFCFB;
     background: #8A4F7D;
@@ -184,24 +181,7 @@ footer {
     margin: auto;
     max-width: 849px;
   }
-  /* NOT IN USE RIGHT NOW
-  .motion article {
-    margin: 2rem auto;
-    width: 80%;
-    max-width: 1000px;
-  }
-  
-  .motion h1 {
-    color: #3abadf;
-    font-size: 3rem;
-    margin-left: 1rem;
-  }
-  
-  .motion article p {
-    border-left: solid 1px #dedede;
-    padding-left: 1rem;
-  }
-  */
+
   .motionList {
     list-style-type: none;
     display: grid;
@@ -226,14 +206,12 @@ footer {
     grid-column: 1;
   }
  
-  /*TO DO - CHANGE TEXT WHEN ANIMATIONS ARE IN*/
   .motionList h2 {
     background-color: rgba(255, 255, 255, 0.5);
-    color: #FEFCFB;
+    color: #005E7C;
     padding: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.7);
     align-self: end;
   }
  
@@ -309,7 +287,9 @@ Adapted from https://blog.hubspot.com/website/typing-animation-css
     animation: type 1.5s steps(20, end) forwards, blinking 1s;
 }
 
-/* SVG
+/* SVG 
+image sources: https://www.clipartmax.com/download/m2H7K9m2K9G6H7N4_toasted-marshmallow-roasted-marshmallow-transparent-background/
+https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
 ------------------------*/
 @keyframes float {
     0% {
@@ -476,18 +456,3 @@ animation-play-state: running;
   .motionList {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-/* NOT IN USE RIGHT NOW
-  .motion article {
-    width: 90%;
-    display: flex;
-    align-items: center;
-  }
-
-  .motion h1 {
-    margin: 0 1rem 0 0;
-  }
-
-  .motion p {
-    flex: 3;
-  }
-  */
