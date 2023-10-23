@@ -409,6 +409,9 @@ span:nth-child(10) {
 animation-play-state: running;
 }
 
+/* Animation Page
+------------------------*/
+
 /*Responsive
 ------------------------*/
 @media screen and (min-width: 750px) {
@@ -458,3 +461,6 @@ animation-play-state: running;
   .motionList {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  /*Responsive Animation from Assignment 2B
+------------------------*/
