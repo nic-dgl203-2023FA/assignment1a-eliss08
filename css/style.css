@@ -473,7 +473,7 @@ path code
     offset-path: path('#motionPath'); /* Code generated from AI from troubleshooting*/
     animation: fly 4s ease-in-out infinite;
 }
-@keyframes wave {
+@keyframes fly {
     0% {
         transform: translateY(0px);
     }
@@ -496,7 +496,7 @@ path code
 }
 
 .bee {
-    animation: wave 8s ease-in-out infinite;
+    animation: fly 6s ease-in-out infinite;
 }
 
 /*Variable Text
@@ -543,11 +543,30 @@ p:nth-last-of-type(4) {
 }
 
 /* Flower 1
+Starter code from AI and adjusted for animation of petals
 */
 
-.petals {
-    
-}
+@keyframes sway {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+      }
+    75% {
+        transform: rotate(-1deg);
+      }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .petals {
+    animation: sway 5s infinite alternate;
+  }
 
 /*Responsive
 ------------------------*/
