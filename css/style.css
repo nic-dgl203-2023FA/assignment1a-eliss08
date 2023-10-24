@@ -459,8 +459,23 @@ path code
     animation: fly 4s ease-in-out;
 }
 
+/*Variable Text
+*/
+:root {
+    --dist: 0%;
+    --scale: 2;
+    --deg: 10deg;
+}
+@keyframes moveIn {
+    0% {
+        transform: translateX(400%) scale(2) rotate(10deg);
+    }
+    100% {
+        transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
+    }
+}
 .animation p {
-    max-width: 300px;
+    animation: moveIn 2s linear both;
 }
 
 /*Responsive
