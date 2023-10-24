@@ -416,7 +416,7 @@ animation-play-state: running;
     align-items: center;
     justify-content: space-around;
     max-width: 849px;
-    padding: 45px 0;
+    padding: 45px 40px;
 }
 
 /* Ladybug
@@ -463,7 +463,7 @@ path code
 */
 :root {
     --dist: 0%;
-    --scale: 2;
+    --scale: 1.4;
     --deg: 10deg;
 }
 @keyframes moveIn {
@@ -479,13 +479,13 @@ path code
     animation: moveIn 2s linear both;
 }
 p:nth-last-of-type(1) {
-    --scale: 1.75;
+    --scale: 1.1;
     --dist: 100%;
-    --deg: 5deg;
+    --deg: -5deg;
     color: #b57caa;
 }
 p:nth-last-of-type(2) {
-    --scale: 1.5;
+    --scale: .7;
     --dist: 75%;
     --deg: 10deg;
     color: #996888;
@@ -496,7 +496,7 @@ p:nth-last-of-type(3) {
     color: #8a4f7d;
 }
 p:nth-last-of-type(4) {
-    --scale: 1.3;
+    --scale: .9;
     --dist: 25%;
     --deg: 18deg;
     color: #772a3c;
