@@ -568,6 +568,20 @@ Starter code from AI and adjusted for animation of petals
     animation: sway 5s infinite alternate;
   }
 
+  /*flower2
+  */
+  @keyframes turn {
+    from {transform: rotateY(45deg);}
+    to {transform: rotateY(0deg);}
+}
+.flower2 {
+    animation: turn 6s ease-out;
+    transform-origin: 20% 90%;
+}
+
+
+
+
 /*Responsive
 ------------------------*/
 @media screen and (min-width: 750px) {
