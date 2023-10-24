@@ -414,19 +414,39 @@ animation-play-state: running;
 .animation {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 849px;
     padding: 45px 0;
 }
-svg {
 
+/* Ladybug
+*/
+@keyframes wave {
+    0% {
+        transform: translateY(0px)
+        rotate(0deg);
+    }
+    50% {
+        transform: translateY(80px)
+        rotate(10deg);
+    }
+    100% {
+        transform: translateY(200px)
+        rotate(20deg);
+    }
 }
-/*bee path code 
+
+#ladybug {
+    animation: wave 6s ease infinite;
+}
+
+/*bee 
+path code 
 <svg xmlns="http://www.w3.org/2000/svg" width="185.719" height="344.477" viewBox="0 0 185.719 344.477">
   <path id="Path_1" data-name="Path 1" d="M676.064,478.529S571.776,463.739,533.991,351.995s-4.869-175.825-43.21-217.108" transform="translate(-490.415 -134.547)" fill="none" stroke="#707070" stroke-width="1"/>
 </svg>
-
 */
+
 @keyframes fly {
     0% {
         offset-distance: 0%;
@@ -435,11 +455,16 @@ svg {
         offset-distance: 100%;
     }
 }
-.bee {
+#bee {
     width: 300px;
     offset-path: path('M676.064,478.529S571.776,463.739,533.991,351.995s-4.869-175.825-43.21-217.108');
     animation: fly 3s ease-in-out;
 }
+
+.animation p {
+    max-width: 300px;
+}
+
 /*Responsive
 ------------------------*/
 @media screen and (min-width: 750px) {
