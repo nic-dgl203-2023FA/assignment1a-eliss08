@@ -436,7 +436,7 @@ animation-play-state: running;
 }
 
 .ladybug {
-    animation: wave 8s ease-in infinite;
+    animation: wave 8s ease-in both;
 }
 
 /*bee 
@@ -470,10 +470,34 @@ path code
 
 .bee {
     width: 300px;
-    offset-path: path('#motionPath'); /* Reference the id of your motion path with a '#' prefix */
-    animation: fly 4s ease-in-out;
+    offset-path: path('#motionPath'); /* Code generated from AI from troubleshooting*/
+    animation: fly 4s ease-in-out infinite;
+}
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    35% {
+        transform: translateY(-40px)
+        /* rotate(10deg); */
+    }
+    50% {
+        transform: translateY(-60px)
+        rotate(2deg);
+    }
+    70% {
+        transform: translateY(-180px)
+        /* rotate(2deg); */
+    }
+    100% {
+        transform: translateY(0px)
+        /* rotate(-5deg); */
+    }
 }
 
+.bee {
+    animation: wave 8s ease-in-out infinite;
+}
 
 /*Variable Text
 */
@@ -521,6 +545,9 @@ p:nth-last-of-type(4) {
 /* Flower 1
 */
 
+.petals {
+    
+}
 
 /*Responsive
 ------------------------*/
