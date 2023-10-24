@@ -79,6 +79,7 @@ nav {
     position: sticky;
     top: 0;
     border-bottom: dashed #005E7C;
+    z-index:1
 }
   
 nav ul {
@@ -445,7 +446,7 @@ path code
 </svg>
 */
 
-@keyframes fly {
+/* @keyframes fly {
     0% {
         offset-distance: 0%;
     }
@@ -457,7 +458,7 @@ path code
     width: 300px;
     offset-path: path('M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586');
     animation: fly 4s ease-in-out;
-}
+} */
 
 /*Variable Text
 */
@@ -501,6 +502,10 @@ p:nth-last-of-type(4) {
     --deg: 18deg;
     color: #772a3c;
 }
+
+/* Flower 1
+*/
+
 
 /*Responsive
 ------------------------*/
