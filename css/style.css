@@ -579,8 +579,16 @@ Starter code from AI and adjusted for animation of petals
     transform-origin: 20% 90%;
 }
 
+/* Vase
+*/
+.vase {
+    fill: #005E7C;
+    transition: fill 1s ease;
+}
 
-
+.vase:hover {
+    fill: #772a3c;
+}
 
 /*Responsive
 ------------------------*/
