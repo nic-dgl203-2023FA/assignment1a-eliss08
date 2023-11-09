@@ -1,17 +1,6 @@
-/*
-COLOR PALETTE
-#996888 - Purple
-#FEFCFB - Cream
-#02020B - Black
-#005E7C - Blue
-#8A4F7D - Dark Purple
-*/
-/*Global Styles
-------------------------*/
-html {
+@im html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }

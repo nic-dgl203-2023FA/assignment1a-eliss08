@@ -1,3 +1,5 @@
+@import 'menu';
+
 /*
 COLOR PALETTE
 #996888 - Purple
@@ -69,109 +71,7 @@ h3 {
     border-bottom: none;
 }
 
-/*Nav Bar adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f
-------------------------*/
-.navWrap {
-    position: sticky; /*  ** note the menu will not be sticky until we add more page content */
-    top: 0;
-    z-index: 99;
-    height: 48px;
-    width: 100%;
-    background-color: #FEFCFB;
-    border-bottom: dashed #005E7C;
-    padding: 1rem 4rem; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index:1
-  }
-/* nav {
-    display: flex; 
-    justify-content: space-between; 
-    background: #FEFCFB; 
-    position: sticky;
-    top: 0;
-    border-bottom: dashed #005E7C;
-} */
-/* Adapted from assignment 2a */
-input#navToggle {
-    display: none;
-  }
-  
-  input#navToggle ~ label {
-    position: relative;
-    padding: 0.25rem;
-    width: 2rem;
-    height: 1.25rem;
-    height: 2rem;
-  }
-  
-  input#navToggle ~ label > span,
-  input#navToggle ~ label > span::before,
-  input#navToggle ~ label > span::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0.75rem;
-    height: 0.125rem;
-    width: 1.75rem;
-    opacity: 1;
-    background: #fff;
-    transition: 0.14s ease-in-out;
-  }
-  
-  input#navToggle ~ label > span::before {
-    top: -0.5rem;
-  }
-  
-  input#navToggle ~ label > span::after {
-    top: 0.5rem;
-  }
-  
-  #navToggle:checked ~ label > span {
-    width: 0;
-    background: rgba(18, 18, 18, 0);
-  }
-  
-  #navToggle:checked ~ label > span::before {
-    transform: rotateZ(45deg);
-    top: 0;
-  }
-  
-  #navToggle:checked ~ label > span::after {
-    transform: rotateZ(-45deg);
-    top: 0;
-  }
-  
-  #navToggle:checked ~ nav {
-    left: 0;
-  }
-nav ul {
-    display: flex; 
-    list-style: none; 
-}
-  
-nav li {
-    padding-left: 1rem; 
-}
-nav a {
-    text-decoration: none;
-}
-nav ul li a:hover {
-    background-color: #005E7C;
-    color: #FEFCFB;
-    transition: all 1s;
-    padding: 15px;
-}
-.logo a {
-    text-decoration: none;
-}
-.logo:hover {
-    background-color: #005E7C;
-    color: #FEFCFB;
-    transition: all 1s;
-    padding: 15px;
-}
+
 /*Profile
 ------------------------*/
 header {
