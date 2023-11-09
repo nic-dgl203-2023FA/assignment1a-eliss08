@@ -1,0 +1,179 @@
+/* Animation Page
+------------------------*/
+.animation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 849px;
+    padding: 45px 40px;
+}
+
+/* Ladybug
+*/
+@keyframes wave {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(-220px)
+        rotate(-5deg);
+    }
+}
+
+.ladybug {
+    animation: wave 8s ease-in both;
+}
+
+/*bee 
+path code 
+<svg xmlns="http://www.w3.org/2000/svg" width="32.417" height="59.163" viewBox="0 0 32.417 59.163">
+  <path id="Path_4" data-name="Path 4" d="M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586" transform="translate(-265.439 30.912)" fill="none" stroke="#707070" stroke-width="1"/>
+</svg>
+*/
+
+/* @keyframes fly {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+.bee {
+    width: 300px;
+    offset-path: path('M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586');
+    animation: fly 4s ease-in-out;
+} */
+@keyframes fly {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+.bee {
+    width: 300px;
+    offset-path: path('#motionPath'); /* Code generated from AI from troubleshooting*/
+    animation: fly 4s ease-in-out infinite;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+    35% {
+        transform: translateY(-40px)
+        /* rotate(10deg); */
+    }
+    50% {
+        transform: translateY(-60px)
+        rotate(2deg);
+    }
+    70% {
+        transform: translateY(-180px)
+        /* rotate(2deg); */
+    }
+    100% {
+        transform: translateY(0px)
+        /* rotate(-5deg); */
+    }
+}
+
+.bee {
+    animation: fly 6s ease-in-out infinite;
+}
+
+/*Variable Text
+*/
+:root {
+    --dist: 0%;
+    --scale: 1.4;
+    --deg: 10deg;
+}
+@keyframes moveIn {
+    0% {
+        transform: translateX(400%) scale(2) rotate(10deg);
+    }
+    100% {
+        transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
+    }
+}
+.animation p {
+    padding: 20px;
+    animation: moveIn 2s linear both;
+}
+p:nth-last-of-type(1) {
+    --scale: 1.1;
+    --dist: 100%;
+    --deg: -5deg;
+    color: #b57caa;
+}
+p:nth-last-of-type(2) {
+    --scale: .7;
+    --dist: 75%;
+    --deg: 10deg;
+    color: #996888;
+}
+p:nth-last-of-type(3) {
+    --dist: 35%;
+    --deg: -10deg;
+    color: #8a4f7d;
+}
+p:nth-last-of-type(4) {
+    --scale: .9;
+    --dist: 25%;
+    --deg: 18deg;
+    color: #772a3c;
+}
+
+/* Flower 1
+Starter code from AI and adjusted for animation of petals
+*/
+
+@keyframes sway {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1.5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+      }
+    75% {
+        transform: rotate(-1deg);
+      }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .petals {
+    animation: sway 5s infinite alternate;
+  }
+
+  /*flower2
+  */
+  @keyframes turn {
+    from {transform: rotateY(45deg);}
+    to {transform: rotateY(0deg);}
+}
+.flower2 {
+    animation: turn 6s ease-out;
+    transform-origin: 20% 90%;
+}
+
+/* Vase
+*/
+.vase {
+    fill: #005E7C;
+    transition: fill 1s ease;
+}
+
+.vase:hover {
+    fill: #772a3c;
+}
