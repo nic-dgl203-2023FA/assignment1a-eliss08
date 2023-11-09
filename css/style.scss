@@ -1,4 +1,6 @@
 @import 'menu';
+@import 'motion';
+@import 'animation';
 
 /*
 COLOR PALETTE
@@ -595,16 +597,7 @@ Starter code from AI and adjusted for animation of petals
     .contact-list a {
         padding: 5px;
     }
-    nav {
-        flex-direction: column;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-top: 0.5rem;
-    }
-    nav li {
-        padding: 0.5rem 0;
-    }
+    
 }
   /*Responsive Motion from Assignment 2A
 ------------------------*/
@@ -612,54 +605,4 @@ Starter code from AI and adjusted for animation of petals
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  /*Responsive Animation from Assignment 2B
-------------------------*/
-/* ######### 10a-ii. Navigation, Large screen rules ######### */
-.navWrap {
-    display: grid;
-    grid-template-columns: 100px minmax(auto, 1100px);
-    justify-content: center;
-    height: auto;
-  }
-
-  .navToggleLabel {
-    display: none;
-  }
-
-  nav {
-    position: initial;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  nav ul li a {
-    border-bottom: none;
-  }
-
-  /* nav ul li a:hover {
-    background: transparent;
-  } */
-
-  nav::after,
-  nav ul li:last-of-type::before {
-    display: none;
-    padding: initial;
-  }
-
-  /* nav .btn {
-    width: auto;
-    background: #13b1e7;
-    color: #fff;
-    letter-spacing: normal;
-    text-shadow: none;
-    box-shadow: none;
-  }
-
-  nav.btn:hover {
-    box-shadow: inset 0 0 5px #13b1e7;
-    background-color: #223054;
-  } */
+ 
