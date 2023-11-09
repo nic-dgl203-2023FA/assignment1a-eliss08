@@ -3,36 +3,26 @@
 @import 'motion';
 @import 'animation';
 
-/*
-COLOR PALETTE
-#996888 - Purple
-#FEFCFB - Cream
-#02020B - Black
-#005E7C - Blue
-#8A4F7D - Dark Purple
-*/
+
 
 
 /*Global Styles
 ------------------------*/
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+// html {
+//     box-sizing: border-box;
+// }
+// *, *:before, *:after {
+//     box-sizing: inherit;
+// }
 
 body {
     color: #005E7C;
-    margin: 0;
-    padding: 0;
+    height: 100vh;
     font-family: 'Sintony', sans-serif;
     font-size: 15px;
     line-height: 1.5;
 }
-img {
-    width: 300px;
-}
+
 a {
     color: #996888;
 }
