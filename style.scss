@@ -41,7 +41,7 @@ h1, h2 {
     font-weight: 400;
     margin: 0;
 }
-.content-wrap {
+.content__wrap {
     max-width: 800px;
     width: 85%;
     margin: 0 auto;
@@ -75,12 +75,12 @@ header {
 
 /*Projects
 ------------------------*/
-.projects {
+.card {
     background-color: #005E7C;
     color: #FEFCFB;
 }
 
-.projects .btn {
+.card .btn {
     color: #FEFCFB;
     background: #8A4F7D;
     text-decoration: none;
@@ -88,15 +88,15 @@ header {
     border-radius: 16px;
     display: inline-block;
 }
-.projects a.btn:hover {
+.card a.btn:hover {
     background: #996888;
     transition: all 1s;
 }
-.project-item {
+.card__media {
     overflow: hidden;
 }
 
-.project-item h3 {
+.card__media h3 {
     margin-top: 0;
 }
 
