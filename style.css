@@ -721,31 +721,37 @@ header {
 
 /*Projects
 ------------------------*/
-.card {
-  background-color: #005E7C;
-  color: #FEFCFB;
-}
-
-.card .btn {
-  color: #FEFCFB;
-  background: #8A4F7D;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 16px;
+.c-card {
   display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
-.card a.btn:hover {
-  background: #996888;
-  transition: all 1s;
+.c-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
 }
-
-.card__media {
-  overflow: hidden;
+.c-card__header .c-card__image {
+  max-width: 100%;
 }
-
-.card__media h3 {
-  margin-top: 0;
+.c-card__body {
+  padding: 20px;
+}
+.c-card__title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.c-card__intro {
+  margin-bottom: 0;
 }
 
 /*Work Experience
@@ -793,36 +799,4 @@ footer {
 }
 
 /*Responsive
-------------------------*/
-@media screen and (min-width: 750px) {
-  header, footer {
-    text-align: center;
-  }
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-  .contact-list {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 749px) {
-  h1 {
-    font-size: 75px;
-    line-height: 0.9;
-    margin-bottom: 20px;
-  }
-  h2 {
-    line-height: 1;
-  }
-  .contact-list a {
-    padding: 5px;
-  }
-}/*# sourceMappingURL=style.css.map */
+------------------------*//*# sourceMappingURL=style.css.map */
