@@ -265,7 +265,7 @@ header {
     width: 60%;
 }
 
-/*Contact Info
+/*Footer
 ------------------------*/
 footer {
     background-image: url(../images/grey_texture.jpg);
@@ -282,7 +282,6 @@ footer {
     justify-content: space-evenly;
 
     &_a {
-        color: $primary-color;
         text-decoration: none;
     }
 }

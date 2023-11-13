@@ -274,7 +274,7 @@ header {
   width: 60%;
 }
 
-/*Contact Info
+/*Footer
 ------------------------*/
 footer {
   background-image: url(../images/grey_texture.jpg);
@@ -292,7 +292,6 @@ footer {
   justify-content: space-evenly;
 }
 .footer__cta_a {
-  color: #005E7C;
   text-decoration: none;
 }
 
