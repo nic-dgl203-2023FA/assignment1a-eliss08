@@ -273,7 +273,7 @@ footer {
     background-position: center;
     color: $secondary-color;
 }
-.contact-list {
+.footer__cta {
     list-style-type: none;
     background: $secondary-color;
     padding: 8px;
@@ -281,7 +281,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
-.contact-list a {
+.footer__cta a {
     color: $primary-color;
     text-decoration: none;
 }

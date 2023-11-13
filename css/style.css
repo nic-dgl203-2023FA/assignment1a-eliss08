@@ -283,7 +283,7 @@ footer {
   color: #FEFCFB;
 }
 
-.contact-list {
+.footer__cta {
   list-style-type: none;
   background: #FEFCFB;
   padding: 8px;
@@ -292,7 +292,7 @@ footer {
   justify-content: space-evenly;
 }
 
-.contact-list a {
+.footer__cta a {
   color: #005E7C;
   text-decoration: none;
 }
