@@ -264,14 +264,10 @@ header {
 
 /*Education
 ------------------------*/
-.education {
+.block__info--plain {
   background-color: #996888;
   color: #FEFCFB;
   padding-bottom: 50px;
-}
-
-.education p {
-  width: 60%;
 }
 
 /*Footer
