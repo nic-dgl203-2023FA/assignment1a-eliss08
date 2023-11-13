@@ -251,7 +251,10 @@ header {
     background-image: url(../images/grey\ wall.png);
     background-size: cover;
     background-position: center;
-    color: #02020B;
+    color: $primary-color;
+}
+.block__content--fade {
+    background-color: rgba($color: $secondary-color, $alpha: 0.6);
 }
 
 /*Education
@@ -261,9 +264,9 @@ header {
     color: $secondary-color;
     padding-bottom: 50px;
 
-    $_p {
-        width: 60%;
-    }
+    // $_p {
+    //     width: 60%;
+    // }
 }
 
 

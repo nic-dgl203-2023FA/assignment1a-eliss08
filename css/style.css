@@ -255,11 +255,15 @@ header {
 
 /*Work Experience
 ------------------------*/
-.work-exp {
+.block__content {
   background-image: url(../images/grey\ wall.png);
   background-size: cover;
   background-position: center;
-  color: #02020B;
+  color: #005E7C;
+}
+
+.block__content--fade {
+  background-color: rgba(254, 252, 251, 0.6);
 }
 
 /*Education
@@ -745,16 +749,6 @@ Starter code from AI and adjusted for animation of petals
     float: left;
     margin-right: 20px;
   }
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-  .contact-list {
-    display: flex;
-    justify-content: center;
-  }
 }
 @media screen and (max-width: 749px) {
   h1 {
@@ -764,19 +758,6 @@ Starter code from AI and adjusted for animation of petals
   }
   h2 {
     line-height: 1;
-  }
-  .contact-list a {
-    padding: 5px;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav ul {
-    flex-direction: column;
-    padding-top: 0.5rem;
-  }
-  nav li {
-    padding: 0.5rem 0;
   }
 }
 /*Responsive Motion from Assignment 2A
