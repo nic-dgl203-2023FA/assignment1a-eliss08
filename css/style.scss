@@ -543,11 +543,23 @@ animation-play-state: running;
 .animation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    // content: "";
+    // display: grid;
+    justify-content: start;
     max-width: 849px;
+    max-height: auto;
     padding: 45px 40px;
-}
+    grid-template-columns: 2fr 1fr;
 
+}
+// .test {
+
+//     justify-content: center;
+//     // align-content: flex-start;
+// }
+// .poem {
+//     grid-row: 2 / 2;
+// }
 /* Ladybug
 */
 @keyframes wave {

@@ -567,9 +567,11 @@ span:nth-child(10) {
 .animation {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   max-width: 849px;
+  max-height: auto;
   padding: 45px 40px;
+  grid-template-columns: 2fr 1fr;
 }
 
 /* Ladybug
