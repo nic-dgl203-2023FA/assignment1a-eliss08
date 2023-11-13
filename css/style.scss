@@ -321,18 +321,21 @@ footer {
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
     transition: border .5s ease-out;
     transition: background-color 1s ease-out;
     transition: color 3s ease-in-out;
 
-    &_:hover {
-        background-color: $secondary-color;
-        color: #8A4F7D;
-        border: 1px dashed $accent-color;
-    }
 }
 
-
+.card__btn:hover {
+    background-color: $secondary-color;
+    color: #8A4F7D;
+    border: 1px dashed $accent-color;
+}
 
   .card__list {
     list-style-type: none;

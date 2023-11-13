@@ -323,11 +323,16 @@ footer {
   text-decoration: none;
   padding: 8px;
   border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   transition: border 0.5s ease-out;
   transition: background-color 1s ease-out;
   transition: color 3s ease-in-out;
 }
-.card__btn_:hover {
+
+.card__btn:hover {
   background-color: #FEFCFB;
   color: #8A4F7D;
   border: 1px dashed #996888;
