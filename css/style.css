@@ -1,0 +1,844 @@
+/*
+COLOR PALETTE
+#996888 - Purple
+#FEFCFB - Cream
+#02020B - Black
+#005E7C - Blue
+#8A4F7D - Dark Purple
+*/
+/*Global Styles
+------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #005E7C;
+  margin: 0;
+  padding: 0;
+  font-family: "Sintony", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: #996888;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h1, h2 {
+  font-family: "Rufina", serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #996888;
+  padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/*Nav Bar adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f
+------------------------*/
+.nav__horizontal {
+  position: sticky; /*  ** note the menu will not be sticky until we add more page content */
+  top: 0;
+  z-index: 99;
+  height: 48px;
+  width: 100%;
+  background-color: #212f54;
+  border-bottom: 1px solid #e0e5eb;
+  box-shadow: 0px 1px 8px #223055;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input#nav__toggle {
+  display: none;
+}
+
+input#nav__toggle ~ label {
+  position: relative;
+  padding: 0.25rem;
+  width: 2rem;
+  height: 1.25rem;
+  height: 2rem;
+}
+
+input#nav__toggle ~ label > span,
+input#nav__toggle ~ label > span::before,
+input#nav__toggle ~ label > span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.75rem;
+  height: 0.125rem;
+  width: 1.75rem;
+  opacity: 1;
+  background: #fff;
+  transition: 0.14s ease-in-out;
+}
+
+input#nav__toggle ~ label > span::before {
+  top: -0.5rem;
+}
+
+input#nav__toggle ~ label > span::after {
+  top: 0.5rem;
+}
+
+#nav__toggle:checked ~ label > span {
+  width: 0;
+  background: rgba(18, 18, 18, 0);
+}
+
+#nav__toggle:checked ~ label > span::before {
+  transform: rotateZ(45deg);
+  top: 0;
+}
+
+#nav__toggle:checked ~ label > span::after {
+  transform: rotateZ(-45deg);
+  top: 0;
+}
+
+#nav__toggle:checked ~ nav {
+  left: 0;
+}
+
+nav {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: -110%;
+  width: 100%;
+  transition: 0.22s ease-in-out;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: #13b1e7;
+  background-size: cover;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  transition: 0.14s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #36bae6;
+  background: #e0e5eb;
+}
+
+nav ul li:last-of-type::before {
+  content: "";
+  display: block;
+  padding: 0.5rem;
+}
+
+nav .btn {
+  background: #fff;
+  border-bottom: none;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px #eeb80c;
+  color: #223054;
+  width: 40%;
+  padding: 0.25rem 0.6rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgb(19, 177, 231);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+nav .btn:hover {
+  background-color: #223054;
+  box-shadow: inset 0 0 5px #13b1e7;
+  color: #fff;
+}
+
+/*Profile
+------------------------*/
+header {
+  background-image: url(../images/Wall\ Texture.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/*Projects
+------------------------*/
+.projects {
+  background-color: #005E7C;
+  color: #FEFCFB;
+}
+
+.projects .btn {
+  color: #FEFCFB;
+  background: #8A4F7D;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.projects a.btn:hover {
+  background: #996888;
+  transition: all 1s;
+}
+
+.project-item {
+  overflow: hidden;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+/*Work Experience
+------------------------*/
+.work-exp {
+  background-image: url(../images/grey\ wall.png);
+  background-size: cover;
+  background-position: center;
+  color: #02020B;
+}
+
+/*Education
+------------------------*/
+.education {
+  background-color: #996888;
+  color: #FEFCFB;
+  padding-bottom: 50px;
+}
+
+.education p {
+  width: 60%;
+}
+
+/*Contact Info
+------------------------*/
+footer {
+  background-image: url(../images/grey_texture.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.contact-list {
+  list-style-type: none;
+  background: #FEFCFB;
+  padding: 8px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-list a {
+  color: #005E7C;
+  text-decoration: none;
+}
+
+/*Motion from Assignment 2A
+------------------------*/
+.motion {
+  padding: 1rem;
+  margin: auto;
+  max-width: 849px;
+}
+
+.motionList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+.motionList li {
+  background-color: #FEFCFB;
+  border-radius: 6px;
+  border: 1px dashed #996888;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(140px, 1fr) auto;
+}
+
+.motionList h2,
+.motionList img {
+  grid-row: 1/2;
+  grid-column: 1;
+}
+
+.motionList h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #005E7C;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-self: end;
+}
+
+.motion a {
+  border-radius: 3px;
+  background-color: #39bae6;
+  color: #fff;
+  height: 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.motion a:hover {
+  background-color: #333;
+}
+
+.motion .btn {
+  color: #FEFCFB;
+  background: #996888;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 16px;
+  transition: border 0.5s ease-out;
+  transition: background-color 1s ease-out;
+  transition: color 3s ease-in-out;
+}
+
+.motion a.btn:hover {
+  background-color: #FEFCFB;
+  color: #8A4F7D;
+  border: 1px dashed #996888;
+}
+
+/* Grow and Shrink
+------------------------*/
+@keyframes scaleIn {
+  0% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.motionList h3 {
+  animation-name: scaleIn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
+}
+
+/* Type
+Adapted from https://blog.hubspot.com/website/typing-animation-css
+------------------------*/
+@keyframes type {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: black;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+.wrapper {
+  display: grid;
+  place-items: center;
+  width: 60px;
+}
+
+.type {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: type 1.5s steps(20, end) forwards, blinking 1s;
+}
+
+/* SVG 
+image sources: https://www.clipartmax.com/download/m2H7K9m2K9G6H7N4_toasted-marshmallow-roasted-marshmallow-transparent-background/
+https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
+------------------------*/
+@keyframes float {
+  0% {
+    transform: translateX(-80px) rotate(0);
+  }
+  50% {
+    transform: translateX(80px) rotate(40deg);
+  }
+  100% {
+    transform: translateX(-80px);
+    rotate: 0;
+  }
+}
+.fire {
+  background-image: url(../images/embers.jpg);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.toast {
+  max-width: 80px;
+  animation: float 6s ease infinite;
+  padding-top: 15px;
+}
+
+/* Flip
+------------------------*/
+@keyframes flip {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+.flip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+span {
+  animation: flip 5s cubic-bezier(0.04, 0.78, 0.41, 0.97) both;
+  transform-origin: 50% 70%;
+}
+
+span:nth-child(2) {
+  margin: 0 0.2rem;
+  animation-delay: 0.5s;
+}
+
+span:nth-child(3) {
+  margin-right: 0.2rem;
+  animation-delay: 1s;
+}
+
+span:nth-child(4) {
+  margin-right: 1rem;
+  animation-delay: 1.5s;
+}
+
+span:nth-child(5) {
+  margin-right: 0.2rem;
+  animation-delay: 2s;
+}
+
+span:nth-child(6) {
+  margin-right: 0.2rem;
+  animation-delay: 2.5s;
+}
+
+span:nth-child(7) {
+  margin-right: 0.2rem;
+  animation-delay: 3s;
+}
+
+span:nth-child(8) {
+  margin-right: 0.2rem;
+  animation-delay: 3.5s;
+}
+
+span:nth-child(9) {
+  margin-right: 0.2rem;
+  animation-delay: 4s;
+}
+
+span:nth-child(10) {
+  margin-right: 0.2rem;
+  animation-delay: 4.5s;
+}
+
+/* Cubic-Bezier Animation
+------------------------*/
+@keyframes slide {
+  25% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(35px);
+  }
+  75% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(90px);
+  }
+}
+.cb_dot_elements {
+  background-color: lavender;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+.cb_dot {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.48, 0.14, 0.56, 0.93);
+  animation-play-state: paused;
+}
+
+.cb_dot:hover {
+  animation-play-state: running;
+}
+
+/* Animation Page
+------------------------*/
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 849px;
+  padding: 45px 40px;
+}
+
+/* Ladybug
+*/
+@keyframes wave {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(-220px) rotate(-5deg);
+  }
+}
+.ladybug {
+  animation: wave 8s ease-in both;
+}
+
+/*bee 
+path code 
+<svg xmlns="http://www.w3.org/2000/svg" width="32.417" height="59.163" viewBox="0 0 32.417 59.163">
+  <path id="Path_4" data-name="Path 4" d="M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586" transform="translate(-265.439 30.912)" fill="none" stroke="#707070" stroke-width="1"/>
+</svg>
+*/
+/* @keyframes fly {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+}
+.bee {
+    width: 300px;
+    offset-path: path('M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586');
+    animation: fly 4s ease-in-out;
+} */
+@keyframes fly {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+.bee {
+  width: 300px;
+  offset-path: path("#motionPath"); /* Code generated from AI from troubleshooting*/
+  animation: fly 4s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(-60px) rotate(2deg);
+  }
+  70% {
+    transform: translateY(-180px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.bee {
+  animation: fly 6s ease-in-out infinite;
+}
+
+/*Variable Text
+*/
+:root {
+  --dist: 0%;
+  --scale: 1.4;
+  --deg: 10deg;
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(400%) scale(2) rotate(10deg);
+  }
+  100% {
+    transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
+  }
+}
+.animation p {
+  padding: 20px;
+  animation: moveIn 2s linear both;
+}
+
+p:nth-last-of-type(1) {
+  --scale: 1.1;
+  --dist: 100%;
+  --deg: -5deg;
+  color: #b57caa;
+}
+
+p:nth-last-of-type(2) {
+  --scale: .7;
+  --dist: 75%;
+  --deg: 10deg;
+  color: #996888;
+}
+
+p:nth-last-of-type(3) {
+  --dist: 35%;
+  --deg: -10deg;
+  color: #8a4f7d;
+}
+
+p:nth-last-of-type(4) {
+  --scale: .9;
+  --dist: 25%;
+  --deg: 18deg;
+  color: #772a3c;
+}
+
+/* Flower 1
+Starter code from AI and adjusted for animation of petals
+*/
+@keyframes sway {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.petals {
+  animation: sway 5s infinite alternate;
+}
+
+/*flower2
+*/
+@keyframes turn {
+  from {
+    transform: rotateY(45deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+.flower2 {
+  animation: turn 6s ease-out;
+  transform-origin: 20% 90%;
+}
+
+/* Vase
+*/
+.vase {
+  fill: #005E7C;
+  transition: fill 1s ease;
+}
+
+.vase:hover {
+  fill: #772a3c;
+}
+
+/*Responsive
+------------------------*/
+@media screen and (min-width: 750px) {
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+}
+/*Responsive Motion from Assignment 2A
+------------------------*/
+.motionList {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/*Responsive Animation from Assignment 2B
+------------------------*/
+/* ######### 10a-ii. Navigation, Large screen rules ######### */
+.nav__horizontal {
+  display: grid;
+  grid-template-columns: 100px minmax(auto, 1100px);
+  justify-content: center;
+  height: auto;
+}
+
+.nav__toggle--closed {
+  display: none;
+}
+
+nav {
+  position: initial;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li a {
+  border-bottom: none;
+}
+
+nav ul li a:hover {
+  background: transparent;
+}
+
+nav::after,
+nav ul li:last-of-type::before {
+  display: none;
+  padding: initial;
+}
+
+nav.btn {
+  width: auto;
+  background: #13b1e7;
+  color: #fff;
+  letter-spacing: normal;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+nav.btn:hover {
+  box-shadow: inset 0 0 5px #13b1e7;
+  background-color: #223054;
+}/*# sourceMappingURL=style.css.map */
