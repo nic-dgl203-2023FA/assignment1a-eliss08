@@ -1,3 +1,5 @@
+$primary-color: #005E7C;
+$secondary-color: #FEFCFB;
 /*
 COLOR PALETTE
 #996888 - Purple
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-    color: #005E7C;
+    color: $primary-color;
     margin: 0;
     padding: 0;
     font-family: 'Sintony', sans-serif;
@@ -78,9 +80,9 @@ h3 {
     z-index: 99;
     height: 48px;
     width: 100%;
-    background-color: #212f54;
+    background-color: $primary-color;
     border-bottom: 1px solid #e0e5eb;
-    box-shadow: 0px 1px 8px #223055;
+    box-shadow: 0px 1px 8px $primary-color;
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
@@ -185,13 +187,13 @@ h3 {
     padding: 0.5rem;
   }
   
-  nav .btn {
+  .nav__btn {
     background: #fff;
     border-bottom: none;
     border-radius: 4px;
     box-shadow: inset 0 0 5px #eeb80c;
     color: #223054;
-    width: 40%;
+    width: auto;
     padding: 0.25rem 0.6rem;
     letter-spacing: 1px;
     text-shadow: 0 0 1px rgb(19, 177, 231);
@@ -200,8 +202,8 @@ h3 {
     margin: auto;
   }
   
-  nav .btn:hover {
-    background-color: #223054;
+  .nav__btn:hover {
+    background-color: $primary-color;
     box-shadow: inset 0 0 5px #13b1e7;
     color: #fff;
   }
@@ -218,7 +220,7 @@ header {
 /*Projects
 ------------------------*/
 .projects {
-    background-color: #005E7C;
+    background-color: $primary-color;
     color: #FEFCFB;
 }
 
@@ -279,7 +281,7 @@ footer {
     justify-content: space-evenly;
 }
 .contact-list a {
-    color: #005E7C;
+    color: $primary-color;
     text-decoration: none;
 }
 /*Motion from Assignment 2A
@@ -316,7 +318,7 @@ footer {
  
   .motionList h2 {
     background-color: rgba(255, 255, 255, 0.5);
-    color: #005E7C;
+    color: $primary-color;
     padding: 0.5rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -689,7 +691,7 @@ Starter code from AI and adjusted for animation of petals
 /* Vase
 */
 .vase {
-    fill: #005E7C;
+    fill: $primary-color;
     transition: fill 1s ease;
 }
 
@@ -785,7 +787,7 @@ Starter code from AI and adjusted for animation of petals
     padding: initial;
   }
 
-    nav.btn {
+    .nav__btn {
     width: auto;
     background: #13b1e7;
     color: #fff;
@@ -794,7 +796,7 @@ Starter code from AI and adjusted for animation of petals
     box-shadow: none;
   }
 
-  nav.btn:hover {
+  .nav__btn:hover {
     box-shadow: inset 0 0 5px #13b1e7;
-    background-color: #223054;
+    background-color: $primary-color;
   }
