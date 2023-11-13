@@ -291,8 +291,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-
-.footer__cta a {
+.footer__cta_a {
   color: #005E7C;
   text-decoration: none;
 }

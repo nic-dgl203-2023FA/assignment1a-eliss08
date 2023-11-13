@@ -280,11 +280,13 @@ footer {
     border-radius: 16px;
     display: flex;
     justify-content: space-evenly;
+
+    &_a {
+        color: $primary-color;
+        text-decoration: none;
+    }
 }
-.footer__cta a {
-    color: $primary-color;
-    text-decoration: none;
-}
+
 /*Motion from Assignment 2A
 ------------------------*/
 .motion {
