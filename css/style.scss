@@ -1,5 +1,6 @@
 $primary-color: #005E7C;
 $secondary-color: #FEFCFB;
+$accent-color: #996888;
 /*
 COLOR PALETTE
 #996888 - Purple
@@ -31,7 +32,7 @@ img {
     width: 300px;
 }
 a {
-    color: #996888;
+    color: $accent-color;
 }
 a:hover {
     text-decoration: none;
@@ -64,7 +65,7 @@ h3 {
     margin: 0;
 }
 .divider > section {
-    border-bottom: 1px dashed #996888;
+    border-bottom: 1px dashed $accent-color;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -158,7 +159,7 @@ h3 {
     z-index: -1;
     height: 100vh;
     width: 100vw;
-    background-color: #13b1e7;
+    background-color: $accent-color;
     background-size: cover;
   }
   
@@ -196,7 +197,7 @@ h3 {
     width: auto;
     padding: 0.25rem 0.6rem;
     letter-spacing: 1px;
-    text-shadow: 0 0 1px rgb(19, 177, 231);
+    text-shadow: 0 0 1px $accent-color;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -204,7 +205,7 @@ h3 {
   
   .nav__btn:hover {
     background-color: $primary-color;
-    box-shadow: inset 0 0 5px #13b1e7;
+    box-shadow: inset 0 0 5px $accent-color;
     color: $secondary-color;
   }
   
@@ -233,7 +234,7 @@ header {
     display: inline-block;
 }
 .projects a.btn:hover {
-    background: #996888;
+    background: $accent-color;
     transition: all 1s;
 }
 .project-item {
@@ -256,7 +257,7 @@ header {
 /*Education
 ------------------------*/
 .education {
-    background-color: #996888;
+    background-color: $accent-color;
     color: $secondary-color;
     padding-bottom: 50px;
 }
@@ -302,7 +303,7 @@ footer {
   .motionList li {
     background-color: $secondary-color;
     border-radius: 6px;
-    border: 1px dashed #996888;
+    border: 1px dashed $accent-color;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1.8rem;
     display: grid;
@@ -343,7 +344,7 @@ footer {
 
 .motion .btn {
     color: $secondary-color;
-    background: #996888;
+    background: $accent-color;
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
@@ -354,7 +355,7 @@ footer {
 .motion a.btn:hover {
     background-color: $secondary-color;
     color: #8A4F7D;
-    border: 1px dashed #996888;
+    border: 1px dashed $accent-color;
 }
 /* Grow and Shrink
 ------------------------*/
@@ -637,7 +638,7 @@ p:nth-last-of-type(2) {
     --scale: .7;
     --dist: 75%;
     --deg: 10deg;
-    color: #996888;
+    color: $accent-color;
 }
 p:nth-last-of-type(3) {
     --dist: 35%;
@@ -789,7 +790,7 @@ Starter code from AI and adjusted for animation of petals
 
     .nav__btn {
     width: auto;
-    background: #13b1e7;
+    background: $accent-color;
     color: $secondary-color;
     letter-spacing: normal;
     text-shadow: none;
@@ -797,6 +798,6 @@ Starter code from AI and adjusted for animation of petals
   }
 
   .nav__btn:hover {
-    box-shadow: inset 0 0 5px #13b1e7;
+    box-shadow: inset 0 0 5px lavender;
     background-color: $primary-color;
   }
