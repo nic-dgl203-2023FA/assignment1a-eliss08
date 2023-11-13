@@ -302,6 +302,36 @@ footer {
   margin: auto;
   max-width: 849px;
 }
+.card__grid_a {
+  border-radius: 3px;
+  background-color: #39bae6;
+  color: #FEFCFB;
+  height: 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__grid_a:hover {
+  background-color: #333;
+}
+
+.card__btn {
+  color: #FEFCFB;
+  background: #996888;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 16px;
+  transition: border 0.5s ease-out;
+  transition: background-color 1s ease-out;
+  transition: color 3s ease-in-out;
+}
+.card__btn_:hover {
+  background-color: #FEFCFB;
+  color: #8A4F7D;
+  border: 1px dashed #996888;
+}
 
 .card__list {
   list-style-type: none;
@@ -336,39 +366,6 @@ footer {
   align-self: end;
 }
 
-.motion a {
-  border-radius: 3px;
-  background-color: #39bae6;
-  color: #FEFCFB;
-  height: 2rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.motion a:hover {
-  background-color: #333;
-}
-
-.motion .btn {
-  color: #FEFCFB;
-  background: #996888;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 16px;
-  transition: border 0.5s ease-out;
-  transition: background-color 1s ease-out;
-  transition: color 3s ease-in-out;
-}
-
-.motion a.btn:hover {
-  background-color: #FEFCFB;
-  color: #8A4F7D;
-  border: 1px dashed #996888;
-}
-
 /* Grow and Shrink
 ------------------------*/
 @keyframes scaleIn {
@@ -382,7 +379,7 @@ footer {
     transform: scale(1);
   }
 }
-.motionList h3 {
+.card__list h3 {
   animation-name: scaleIn;
   animation-duration: 3s;
   animation-delay: 3s;
@@ -762,7 +759,7 @@ Starter code from AI and adjusted for animation of petals
 }
 /*Responsive Motion from Assignment 2A
 ------------------------*/
-.motionList {
+.card__list {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 

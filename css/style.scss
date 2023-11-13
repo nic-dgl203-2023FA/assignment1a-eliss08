@@ -297,7 +297,42 @@ footer {
     padding: 1rem;
     margin: auto;
     max-width: 849px;
+
+    &_a {
+        border-radius: 3px;
+        background-color: #39bae6;
+        color: $secondary-color;
+        height: 2rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_a:hover {
+        background-color: #333;
+    }
   }
+
+.card__btn {
+    color: $secondary-color;
+    background: $accent-color;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 16px;
+    transition: border .5s ease-out;
+    transition: background-color 1s ease-out;
+    transition: color 3s ease-in-out;
+
+    &_:hover {
+        background-color: $secondary-color;
+        color: #8A4F7D;
+        border: 1px dashed $accent-color;
+    }
+}
+
+
 
   .card__list {
     list-style-type: none;
@@ -332,37 +367,9 @@ footer {
     align-self: end;
   }
  
-  .motion a {
-    border-radius: 3px;
-    background-color: #39bae6;
-    color: $secondary-color;
-    height: 2rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .motion a:hover {
-    background-color: #333;
-  }
 
-.motion .btn {
-    color: $secondary-color;
-    background: $accent-color;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 16px;
-    transition: border .5s ease-out;
-    transition: background-color 1s ease-out;
-    transition: color 3s ease-in-out;
-}
-.motion a.btn:hover {
-    background-color: $secondary-color;
-    color: #8A4F7D;
-    border: 1px dashed $accent-color;
-}
+  
+  
 /* Grow and Shrink
 ------------------------*/
 @keyframes scaleIn {
@@ -371,7 +378,7 @@ footer {
     100% {transform: scale(1);}
 }
 
-.motionList h3 {
+.card__list h3 {
     animation-name: scaleIn;
     animation-duration: 3s;
     animation-delay: 3s;
@@ -730,7 +737,7 @@ Starter code from AI and adjusted for animation of petals
 }
   /*Responsive Motion from Assignment 2A
 ------------------------*/
-  .motionList {
+  .card__list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
