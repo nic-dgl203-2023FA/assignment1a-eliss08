@@ -247,7 +247,7 @@ header {
 
 /*Work Experience
 ------------------------*/
-.work-exp {
+.block__content {
     background-image: url(../images/grey\ wall.png);
     background-size: cover;
     background-position: center;
@@ -723,16 +723,7 @@ Starter code from AI and adjusted for animation of petals
     h2 {
         line-height: 1;
     }
-    nav {
-        flex-direction: column;
-    }
-    nav ul {
-        flex-direction: column;
-        padding-top: 0.5rem;
-    }
-    nav li {
-        padding: 0.5rem 0;
-    }
+    
 }
   /*Responsive Motion from Assignment 2A
 ------------------------*/
