@@ -468,7 +468,7 @@ https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
     transform: rotateY(0deg);
   }
 }
-.flip {
+.motion--turn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -544,13 +544,13 @@ span:nth-child(10) {
     transform: translateY(90px);
   }
 }
-.cb_dot_elements {
+.motion__slide--slide {
   background-color: lavender;
   border-radius: 5px;
   padding: 35px;
 }
 
-.cb_dot {
+.motion__slide {
   animation-name: slide;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -558,7 +558,7 @@ span:nth-child(10) {
   animation-play-state: paused;
 }
 
-.cb_dot:hover {
+.motion__slide:hover {
   animation-play-state: running;
 }
 
