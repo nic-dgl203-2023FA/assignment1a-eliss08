@@ -89,7 +89,7 @@ h3 {
   height: 48px;
   width: 100%;
   background-color: #005E7C;
-  border-bottom: 1px solid #e0e5eb;
+  border-bottom: 1px solid #FEFCFB;
   box-shadow: 0px 1px 8px #005E7C;
   padding: 0 1.5rem;
   display: flex;
@@ -119,7 +119,7 @@ input#nav__toggle ~ label > span::after {
   height: 0.125rem;
   width: 1.75rem;
   opacity: 1;
-  background: #fff;
+  background: #FEFCFB;
   transition: 0.14s ease-in-out;
 }
 
@@ -179,14 +179,14 @@ nav ul li a {
   text-decoration: none;
   width: 100%;
   padding: 0.75rem 1rem;
-  color: #fff;
+  color: #FEFCFB;
   border-bottom: solid 1px rgba(255, 255, 255, 0.5);
   transition: 0.14s ease-in-out;
 }
 
 nav ul li a:hover {
   color: #36bae6;
-  background: #e0e5eb;
+  background: #FEFCFB;
 }
 
 nav ul li:last-of-type::before {
@@ -196,7 +196,7 @@ nav ul li:last-of-type::before {
 }
 
 .nav__btn {
-  background: #fff;
+  background: #FEFCFB;
   border-bottom: none;
   border-radius: 4px;
   box-shadow: inset 0 0 5px #eeb80c;
@@ -213,7 +213,7 @@ nav ul li:last-of-type::before {
 .nav__btn:hover {
   background-color: #005E7C;
   box-shadow: inset 0 0 5px #13b1e7;
-  color: #fff;
+  color: #FEFCFB;
 }
 
 /*Profile
@@ -280,7 +280,7 @@ footer {
   background-image: url(../images/grey_texture.jpg);
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: #FEFCFB;
 }
 
 .contact-list {
@@ -341,7 +341,7 @@ footer {
 .motion a {
   border-radius: 3px;
   background-color: #39bae6;
-  color: #fff;
+  color: #FEFCFB;
   height: 2rem;
   margin-top: 1rem;
   text-decoration: none;
@@ -832,7 +832,7 @@ nav ul li:last-of-type::before {
 .nav__btn {
   width: auto;
   background: #13b1e7;
-  color: #fff;
+  color: #FEFCFB;
   letter-spacing: normal;
   text-shadow: none;
   box-shadow: none;
