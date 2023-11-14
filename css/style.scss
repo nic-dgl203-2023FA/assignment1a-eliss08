@@ -255,16 +255,17 @@ header {
 .block__content--main {
     background-color: $primary-color;
     color: $secondary-color;
+
+    .btn--link {
+        color: $secondary-color;
+        background: #8A4F7D;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 16px;
+        display: inline-block;
+    }
 }
 
-.block__content--main .btn--link {
-    color: $secondary-color;
-    background: #8A4F7D;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 16px;
-    display: inline-block;
-}
 .block__content--main a.btn--link:hover {
     background: $accent-color;
     transition: all 1s;
@@ -274,12 +275,14 @@ header {
     color: $secondary-color;
     overflow: auto;
     max-height: 200px;
+
+    h3 p{
+        margin-top: 0;
+        white-space: normal;
+    }
 }
 // Attempt to fix text wrapping using CHAT GPT
-.block__content--item h3 p{
-    margin-top: 0;
-    white-space: normal;
-}
+
 
 /* 5. Work Experience
 ------------------------*/
