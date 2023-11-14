@@ -240,10 +240,13 @@ header {
 .block__content--item {
     overflow: hidden;
     color: $secondary-color;
+    overflow: auto;
+    max-height: 200px;
 }
-
-.block__content--item h3 {
+// Attempt to fix text wrapping using CHAT GPT
+.block__content--item h3 p{
     margin-top: 0;
+    white-space: normal;
 }
 
 /*Work Experience
@@ -738,9 +741,10 @@ Starter code from AI and adjusted for animation of petals
     header, footer {
         text-align: center;
     }
-    .block__content---item img {
+    .block__content--item img {
         float:left;
         margin-right: 20px;
+        white-space: nowrap;
     }
 }
 @media screen and (max-width: 749px) {
