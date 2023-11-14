@@ -1,6 +1,11 @@
 $primary-color: #005E7C;
 $secondary-color: #FEFCFB;
 $accent-color: #996888;
+
+@mixin border {
+    border-bottom: 1px dashed lavender;
+}
+
 /*
 COLOR PALETTE
 #996888 - Purple
@@ -91,7 +96,7 @@ h3 {
     margin: 0;
 }
 .divider > section {
-    border-bottom: 1px dashed lavender;
+    @include border;
     padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -109,7 +114,7 @@ adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-
     height: 48px;
     width: 100%;
     background-color: $primary-color;
-    border-bottom: 1px dashed lavender;
+    @include border;
     box-shadow: 0px 1px 8px $primary-color;
     padding: 0 1.5rem;
     display: flex;
@@ -200,7 +205,7 @@ nav ul li a {
     width: 100%;
     padding: 0.75rem 1rem;
     color: $secondary-color;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    // border-bottom: solid 1px rgba(255, 255, 255, 0.5);
     transition: 0.14s ease-in-out;
 }
   
