@@ -9,9 +9,35 @@ COLOR PALETTE
 #005E7C - Blue
 #8A4F7D - Dark Purple
 */
+// TABLE OF CONTENTS
+
+//   1. Global styles
+//   2. Nav Bar
+//   3. Profile
+//   4. Projects
+//   5. Work Experience
+//   6. Education
+//   7. Footer
+//   8. Motion from Assignment
+//   9. Grow and Shrink
+//   10. Type
+//   11. SVG
+//   12. Flip
+//   13. Cubic-Bezier Animation
+//   14. Animation Page
+        // 14a-i. Ladybug
+        // 14a-ii. Bee
+        // 14a-iiI. Variable Test
+        // 14a-iv. Flower 1
+        // 14a-v. Flower 2
+        // 14a-vi. Vase
+//   15. Responsive
+        // 15a-i. Motion
+        // 15a-ii. Animation
+        // 15a-iiI. Navigation
 
 
-/*Global Styles
+/* 1. Global Styles
 ------------------------*/
 html {
     box-sizing: border-box;
@@ -72,7 +98,8 @@ h3 {
     border-bottom: none;
 }
 
-/*Nav Bar adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f
+/*2. Nav Bar 
+adapted from https://dev.to/supanthapaul/create-a-simple-navbar-with-7-lines-of-css-4h7f
 ------------------------*/
 
 .nav__horizontal {
@@ -210,7 +237,7 @@ nav ul li:last-of-type::before {
 }
   
 
-/*Profile
+/* 3. Profile
 ------------------------*/
 header {
     background-image: url(../images/Wall\ Texture.png);
@@ -218,7 +245,7 @@ header {
     background-position: center;
 }
 
-/*Projects
+/* 4. Projects
 ------------------------*/
 .block__content--main {
     background-color: $primary-color;
@@ -249,7 +276,7 @@ header {
     white-space: normal;
 }
 
-/*Work Experience
+/* 5. Work Experience
 ------------------------*/
 .block__content {
     background-image: url(../images/grey\ wall.png);
@@ -261,7 +288,7 @@ header {
     background-color: rgba($color: $secondary-color, $alpha: 0.6);
 }
 
-/*Education
+/* 6. Education
 ------------------------*/
 .block__info--plain {
     background-color: $accent-color;
@@ -274,7 +301,7 @@ header {
 }
 
 
-/*Footer
+/* 7. Footer
 ------------------------*/
 footer {
     background-image: url(../images/grey_texture.jpg);
@@ -295,7 +322,7 @@ footer {
     }
 }
 
-/*Motion from Assignment 2A
+/* 8. Motion from Assignment 2A
 ------------------------*/
 .card__grid {
     padding: 1rem;
@@ -377,7 +404,7 @@ footer {
 
   
   
-/* Grow and Shrink
+/* 9. Grow and Shrink
 ------------------------*/
 @keyframes scaleIn {
     0% {transform: scale(1.3);}
@@ -394,7 +421,7 @@ footer {
     justify-content: center;
 } 
 
-/* Type
+/* 10. Type
 Adapted from https://blog.hubspot.com/website/typing-animation-css
 ------------------------*/
 @keyframes type {
@@ -422,7 +449,7 @@ Adapted from https://blog.hubspot.com/website/typing-animation-css
     animation: type 1.5s steps(20, end) forwards, blinking 1s;
 }
 
-/* SVG 
+/* 11. SVG 
 image sources: https://www.clipartmax.com/download/m2H7K9m2K9G6H7N4_toasted-marshmallow-roasted-marshmallow-transparent-background/
 https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
 ------------------------*/
@@ -452,7 +479,7 @@ https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
     padding-top: 15px;
 }
 
-/* Flip
+/* 12. Flip
 ------------------------*/
 @keyframes flip {
     from {transform: rotateY(90deg);}
@@ -511,7 +538,7 @@ span:nth-child(10) {
     animation-delay: 4.5s;
 }
 
-/* Cubic-Bezier Animation
+/* 13. Cubic-Bezier Animation
 ------------------------*/
 @keyframes slide {
     25% { 
@@ -542,7 +569,7 @@ span:nth-child(10) {
 animation-play-state: running;
 }
 
-/* Animation Page
+/* 14. Animation Page
 ------------------------*/
 .animation {
     display: flex;
@@ -564,7 +591,7 @@ animation-play-state: running;
 // .poem {
 //     grid-row: 2 / 2;
 // }
-/* Ladybug
+/* 14a-i. Ladybug
 */
 @keyframes wave {
     0% {
@@ -583,7 +610,7 @@ animation-play-state: running;
     animation: wave 8s ease-in both;
 }
 
-/*bee 
+/* 14a-ii. bee 
 path code 
 <svg xmlns="http://www.w3.org/2000/svg" width="32.417" height="59.163" viewBox="0 0 32.417 59.163">
   <path id="Path_4" data-name="Path 4" d="M297.541,27.862l-31.278-25.3L288.5-13.4,273.716-30.586" transform="translate(-265.439 30.912)" fill="none" stroke="#707070" stroke-width="1"/>
@@ -643,7 +670,7 @@ path code
     animation: fly 6s ease-in-out infinite;
 }
 
-/*Variable Text
+/* 14a-iiI. Variable Text
 */
 :root {
     --dist: 0%;
@@ -687,7 +714,7 @@ path code
     color: #772a3c;
 }
 
-/* Flower 1
+/* 14a-iv. Flower 1
 Starter code from AI and adjusted for animation of petals
 */
 
@@ -713,7 +740,7 @@ Starter code from AI and adjusted for animation of petals
     animation: sway 5s infinite alternate;
   }
 
-  /*flower2
+  /*14a-v. flower2
   */
   @keyframes turn {
     from {transform: rotateY(45deg);}
@@ -724,7 +751,7 @@ Starter code from AI and adjusted for animation of petals
     transform-origin: 20% 90%;
 }
 
-/* Vase
+/* 14a-vi. Vase
 */
 .vase {
     fill: $primary-color;
@@ -735,7 +762,7 @@ Starter code from AI and adjusted for animation of petals
     fill: #772a3c;
 }
 
-/*Responsive
+/* 15. Responsive
 ------------------------*/
 @media screen and (min-width: 750px) {
     header, footer {
@@ -758,16 +785,16 @@ Starter code from AI and adjusted for animation of petals
     }
     
 }
-  /*Responsive Motion from Assignment 2A
+  /* 15a-i. Responsive Motion from Assignment 2A
 ------------------------*/
   .card__list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  /*Responsive Animation from Assignment 2B
+  /* 15a-ii. Responsive Animation from Assignment 2B
 ------------------------*/
 
-/* ######### 10a-ii. Navigation, Large screen rules ######### */
+/* ######### 15a-iiI. Navigation, Large screen rules ######### */
 .nav__horizontal {
     display: grid;
     grid-template-columns: 100px minmax(auto, 1100px);
