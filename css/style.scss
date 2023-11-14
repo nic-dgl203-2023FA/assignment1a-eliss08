@@ -6,6 +6,12 @@ $accent-color: #996888;
     border-bottom: 1px dashed lavender;
 }
 
+@mixin display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*
 COLOR PALETTE
 #996888 - Purple
@@ -230,8 +236,7 @@ nav ul li:last-of-type::before {
     padding: 0.25rem 0.6rem;
     letter-spacing: 1px;
     text-shadow: 0 0 1px $accent-color;
-    display: flex;
-    justify-content: center;
+    @include display-center;
     margin: auto;
 }
   
@@ -344,9 +349,7 @@ footer {
         height: 2rem;
         margin-top: 1rem;
         text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-center;
     }
 
     &_a:hover {
@@ -360,9 +363,7 @@ footer {
     text-decoration: none;
     padding: 8px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-center;
     font-size: 1.5rem;
     transition: border .5s ease-out;
     transition: background-color 1s ease-out;
@@ -425,8 +426,7 @@ footer {
     animation-duration: 3s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
-    display: flex;
-    justify-content: center;
+    @include display-center;
 } 
 
 /* 10. Type
@@ -495,9 +495,7 @@ https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
 }
 
 .motion--turn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-center;
     font-size: 2rem;
     font-weight: 600;
     perspective: 800px;
@@ -580,8 +578,7 @@ animation-play-state: running;
 /* 14. Animation Page
 ------------------------*/
 .animation {
-    display: flex;
-    align-items: center;
+    @include display-center;
     // content: "";
     // display: grid;
     justify-content: start;

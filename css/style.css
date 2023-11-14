@@ -205,6 +205,7 @@ nav ul li:last-of-type::before {
   text-shadow: 0 0 1px #996888;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -390,6 +391,7 @@ footer {
   animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* 10. Type
@@ -469,8 +471,8 @@ https://pixabay.com/photos/embers-glow-wood-burn-pile-of-wood-142515/
 }
 .motion--turn {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-weight: 600;
   perspective: 800px;
@@ -565,6 +567,7 @@ span:nth-child(10) {
 ------------------------*/
 .animation {
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: start;
   max-width: 849px;
