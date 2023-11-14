@@ -225,7 +225,7 @@ header {
     color: $secondary-color;
 }
 
-.block__content--main .btn {
+.block__content--main .btn--link {
     color: $secondary-color;
     background: #8A4F7D;
     text-decoration: none;
@@ -233,7 +233,7 @@ header {
     border-radius: 16px;
     display: inline-block;
 }
-.block__content--main a.btn:hover {
+.block__content--main a.btn--link:hover {
     background: $accent-color;
     transition: all 1s;
 }

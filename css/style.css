@@ -231,7 +231,7 @@ header {
   color: #FEFCFB;
 }
 
-.block__content--main .btn {
+.block__content--main .btn--link {
   color: #FEFCFB;
   background: #8A4F7D;
   text-decoration: none;
@@ -240,7 +240,7 @@ header {
   display: inline-block;
 }
 
-.block__content--main a.btn:hover {
+.block__content--main a.btn--link:hover {
   background: #996888;
   transition: all 1s;
 }
