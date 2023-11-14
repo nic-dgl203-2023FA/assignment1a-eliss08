@@ -247,7 +247,6 @@ header {
   overflow: hidden;
   color: #FEFCFB;
   overflow: auto;
-  max-height: 200px;
 }
 .block__content--item h3 p {
   margin-top: 0;
