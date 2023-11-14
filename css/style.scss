@@ -239,6 +239,7 @@ header {
 }
 .block__content--item {
     overflow: hidden;
+    color: $secondary-color;
 }
 
 .block__content--item h3 {
@@ -654,28 +655,29 @@ path code
         transform: translateX(var(--dist)) scale(var(--scale)) rotate(var(--deg));
     }
 }
-.animation p {
+
+.paragraph--slide-in {
     padding: 20px;
     animation: moveIn 2s linear both;
 }
-p:nth-last-of-type(1) {
+.paragraph--slide-in:nth-last-of-type(1) {
     --scale: 1.1;
     --dist: 100%;
     --deg: -5deg;
     color: #b57caa;
 }
-p:nth-last-of-type(2) {
+.paragraph--slide-in:nth-last-of-type(2) {
     --scale: .7;
     --dist: 75%;
     --deg: 10deg;
     color: $accent-color;
 }
-p:nth-last-of-type(3) {
+.paragraph--slide-in:nth-last-of-type(3) {
     --dist: 35%;
     --deg: -10deg;
     color: #8a4f7d;
 }
-p:nth-last-of-type(4) {
+.paragraph--slide-in:nth-last-of-type(4) {
     --scale: .9;
     --dist: 25%;
     --deg: 18deg;
@@ -760,6 +762,7 @@ Starter code from AI and adjusted for animation of petals
 
   /*Responsive Animation from Assignment 2B
 ------------------------*/
+
 /* ######### 10a-ii. Navigation, Large screen rules ######### */
 .nav__horizontal {
     display: grid;
