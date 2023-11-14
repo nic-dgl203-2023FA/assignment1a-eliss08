@@ -381,17 +381,17 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 1rem;
-  }
-  
-  .card__list li {
-    background-color: $secondary-color;
-    border-radius: 6px;
-    border: 1px dashed $accent-color;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1.8rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(140px, 1fr) auto;
+
+    li {
+        background-color: $secondary-color;
+        border-radius: 6px;
+        border: 1px dashed $accent-color;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1.8rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(140px, 1fr) auto;
+      }
   }
   
   .card__list h2,
