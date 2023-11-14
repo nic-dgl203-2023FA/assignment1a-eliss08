@@ -226,12 +226,12 @@ header {
 
 /*Projects
 ------------------------*/
-.projects {
+.block__content--main {
   background-color: #005E7C;
   color: #FEFCFB;
 }
 
-.projects .btn {
+.block__content--main .btn {
   color: #FEFCFB;
   background: #8A4F7D;
   text-decoration: none;
@@ -240,16 +240,16 @@ header {
   display: inline-block;
 }
 
-.projects a.btn:hover {
+.block__content--main a.btn:hover {
   background: #996888;
   transition: all 1s;
 }
 
-.project-item {
+.block__content--item {
   overflow: hidden;
 }
 
-.project-item h3 {
+.block__content--item h3 {
   margin-top: 0;
 }
 
@@ -749,7 +749,7 @@ Starter code from AI and adjusted for animation of petals
   header, footer {
     text-align: center;
   }
-  .project-item img {
+  .block__content---item img {
     float: left;
     margin-right: 20px;
   }
